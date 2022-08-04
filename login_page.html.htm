@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        width = "device-width" scale = 1.0>
+    <link rel="stylesheet" href="css_login_page.css">
+    </head>
+    <body>
+        <div id="after">ACCESS GRANTED</div>
+        <div class="container" id="part1">
+            <div class="header"> Sign up</div>
+            <div class="input-header">
+                <form id="forms">
+                <input class="name1" id="username" placeholder="Enter your name">
+                <input class="pinput1" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Create Password">
+                <input class="pinput2" type="password"  placeholder="Confirm Password">
+            </form>
+                <div class="checker" id="checker"> </div>
+                <button onclick="submit()">
+                    <span>     Sign up </span>
+                </button>
+            </div>
+        </div>
+        <div class="container" style="display: none;" id="part2">
+            <div class="header"> Login</div>
+            <div class="input-header">
+                <form id="forms1">
+                <input class="name2" placeholder="Name">
+                <input class="password2" type="password" placeholder="Password">
+            </form>
+                <div class="checker" id="checker2"> </div>
+                <div class="checker2" id="checker3"> </div>
+                <button onclick="check()">
+                    <span>      Login </span>
+                </button>
+            </div>
+        </div> 
+        <img id="waiter" src="C:\Users\Ngozi Victory Chidi\Pictures\Loading_icon.gif">
+    </body>
+    <script src="js_login_page.js"></script>
+</html>
